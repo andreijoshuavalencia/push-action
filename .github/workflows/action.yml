@@ -3,7 +3,7 @@ on:
   pull_request:
     branches: 
         - master 
-        -develop
+        - develop
 jobs:
   build:
     name: Build simple project
