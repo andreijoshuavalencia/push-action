@@ -24,7 +24,6 @@ class GitCommand {
                 return `You have ${size} change/s.\n`;
             }
         }
-        return true;
         // return "You have 2 change/s.\n";
     }
 
