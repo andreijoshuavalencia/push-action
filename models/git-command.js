@@ -14,6 +14,17 @@ class GitCommand {
         /*
             Create logic here and run unit testing.
         */
+        let size = Object.keys(this.working_directory.new_changes).length;
+        let path = this.working_directory.new_changes;
+        console.log(size);
+        for(let i = 0; i <= size; i++){
+            if(size > 0){
+                return `You have ${size} change/s.\n${path['views/index.html'].location}/${path['views/index.html'].name}\n${path['assets/scripts/index.js'].location}/${path['assets/scripts/index.js'].name}`; 
+            }else{
+                return `You have ${size} change/s.\n`;
+            }
+        }
+        // return "You have 2 change/s.\n";
     }
 
     //Command: git add <filename/file directory/wildcard> 
